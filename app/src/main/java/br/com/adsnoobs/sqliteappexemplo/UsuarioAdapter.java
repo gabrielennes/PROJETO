@@ -36,8 +36,11 @@ public class UsuarioAdapter extends ArrayAdapter<Usuario> {
         TextView textViewNome = (TextView)convertView.findViewById(R.id.textViewNome);
         TextView textViewEmail = (TextView)convertView.findViewById(R.id.textViewEmail);
 
+
+
         textViewNome.setText(usuario.getNome().toString());
         textViewEmail.setText(usuario.getEmail().toString());
+
         if (usuario.getAvatar() != null)
             imageView.setImageBitmap(usuario.getAvatar());
 

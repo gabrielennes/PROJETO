@@ -9,7 +9,6 @@ import android.graphics.Bitmap;
 import java.util.ArrayList;
 
 
-
 public class Usuario {
 
     private int codigo;
@@ -22,7 +21,7 @@ public class Usuario {
     private boolean excluir;
     private Context context;
 
-    public Usuario(Context context){
+    public Usuario(Context context) {
         this.context = context;
         codigo = -1;
     }
@@ -45,7 +44,7 @@ public class Usuario {
 
     public void setEmail(String email) {
         this.email = email;
-        this.urlGravatar = String.format("https://s.gravatar.com/avatar/%s?s=200",Auxilio.md5Hex(this.email));
+        this.urlGravatar = String.format("https://s.gravatar.com/avatar/%s?s=200", Auxilio.md5Hex(this.email));
     }
 
     public String getSenha() {

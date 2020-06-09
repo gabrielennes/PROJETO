@@ -90,6 +90,8 @@ public class CadastroActivity extends AppCompatActivity implements View.OnClickL
                     valido = false;
                 }
 
+
+
                 if (valido){
                     usuario.salvar();
                     finish();
