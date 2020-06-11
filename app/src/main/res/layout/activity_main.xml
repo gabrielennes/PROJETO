@@ -11,9 +11,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="428dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_red_light"
         android:text="@string/btn_incluir"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,10 +25,23 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_red_light"
         android:text="@string/btn_consultar"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonIncluir" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="259dp"
+        android:layout_height="327dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonIncluir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205"
+        app:srcCompat="@drawable/logotipo" />
+
 </android.support.constraint.ConstraintLayout>
